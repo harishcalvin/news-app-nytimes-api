@@ -30,6 +30,12 @@
   object-fit: contain;
 }
 .news--link {
-  color: orange;
+  padding-top: 10px;
+  color: black;
+  font-weight: 700;
   font-size: 1.1rem;
+}
+.news--link:hover {
+  color: orange;
+  transform: scale(1.2);
 }

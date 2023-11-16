@@ -4,9 +4,7 @@ const newsContainer = document.querySelector("#newsList");
 fetch(apiUrl)
   .then((response) => response.json())
   .then((data) => {
-    console.log("output");
-    // received data
-    // console.log(data.results[0]);
+    console.log("output is working");
     data.results.forEach((result) => {
       let articleDiv = document.createElement("div");
       articleDiv.classList.add("article");
@@ -40,20 +38,3 @@ fetch(apiUrl)
     console.log("fucked");
     console.error("Error fetching data:", error);
   });
-
-// const newsContainer = document.querySelector("#newsList");
-// const newsDiv = document.createElement("div");
-// newsDiv.classList.add("news--div");
-// const heading = document.createElement("h2");
-// heading.textContent = "hello world";
-// newsContainer.appendChild(newsDiv);
-// newsDiv.appendChild(heading);
-
-// data.results[0];
-// const newsDiv = document.createElement("div");
-// newsDiv.classList.add("news--div");
-// const heading = document.createElement("h2");
-// heading.textContent = data.results[0].title;
-// newsContainer.appendChild(newsDiv);
-// newsDiv.appendChild(heading);
-// // console.log(heading);
