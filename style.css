@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero--title {
+  text-align: center;
+}
+#newsList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.article {
+  width: 25rem;
+  height: auto;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
+  border: 0.0625rem solid #00000015;
+}
+.news--description {
+  padding: 16px 0;
+}
+.news--thumb--2img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.news--link {
+  color: orange;
+  font-size: 1.1rem;
+}
